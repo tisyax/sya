@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience</title>
+    <link rel="stylesheet" href="css/experiencestyle.css">
+</head>
+
+<style>
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #d6e4cb;
+    background-color: #101213;
+    margin: 0;
+    padding: 0;
+    line-height: 2.0;
+}
+</style>
+
+<body>
+    <header>
+        <h1>Experience</h1>
+        <p>My Skills, Certificates, & Experience</p>
+    </header>
+
+<style>
+/* Header */
+header {
+    text-align: center;
+    background: linear-gradient(135deg, #0b2537, #101213);
+    padding: 20px;
+    color: #d6e4cb;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px #ff7373;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+header p {
+    margin: 10px 0 20px;
+    font-size: 1.2rem;
+}
+
+ .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+
+	 h2 {
+            text-align: center;
+            color: #a8a4b8;
+            margin-bottom: 20px;
+        }
+</style>
+
+<section>
+   <div class="container">
+    <!-- Skills Section -->
+    <h2 style="color: #a8a4b8; text-align: center; font-size: 35px;">My Skills</h2>
+      <p style="color: #d6e4cb; text-align: center; margin-bottom: 30px; font-size: 20px;">
+         Below are some of my technical and professional skills, showcasing my abilities and strengths in various areas.
+      </p>
+    <div class="skills-section">
+        <!-- Technical Skills Section -->
+        <div class="skills">
+            <h2>Technical Skills</h2>
+            <div class="progress-bar">
+                <span>HTML</span>
+                <div class="progress" style="--progress: 60%;"></div>
+                <div class="percentage">60%</div>
+            </div>
+            <div class="progress-bar">
+                <span>CSS</span>
+                <div class="progress" style="--progress: 60%;"></div>
+                <div class="percentage">60%</div>
+            </div>
+            <div class="progress-bar">
+                <span>Microsoft Word & Excel</span>
+                <div class="progress" style="--progress: 70%;"></div>
+                <div class="percentage">70%</div>
+            </div>
+            <div class="progress-bar">
+                <span>Canva</span>
+                <div class="progress" style="--progress: 85%;"></div>
+                <div class="percentage">85%</div>
+            </div>
+            <div class="progress-bar">
+                <span>C++</span>
+                <div class="progress" style="--progress: 65%;"></div>
+                <div class="percentage">65%</div>
+            </div>
+        </div>
+
+        <!-- Professional Skills Section -->
+        <div class="skills">
+            <h2>Professional Skills</h2>
+            <div class="circular-container">
+                <div class="circular-skill">
+                    <div class="circular-progress" style="--progress: 90%;">
+                        <span>90%</span>
+                    </div>
+                    <p>Communication</p>
+                </div>
+                <div class="circular-skill">
+                    <div class="circular-progress" style="--progress: 65%;">
+                        <span>65%</span>
+                    </div>
+                    <p>Teamwork</p>
+                </div>
+                <div class="circular-skill">
+                    <div class="circular-progress" style="--progress: 75%;">
+                        <span>75%</span>
+                    </div>
+                    <p>Leadership</p>
+                </div>
+                <div class="circular-skill">
+                    <div class="circular-progress" style="--progress: 85%;">
+                        <span>85%</span>
+                    </div>
+                    <p>Problem Solving</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+<style>
+/* Skills Section */
+.skills-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 300px;
+}
+
+.skills-section .skills {
+    flex: 1;
+}
+
+.skills h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    border-bottom: 2px solid #00d9ff;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Technical Skills (Horizontal Bars) */
+.progress-bar {
+    margin-bottom: 20px;
+}
+
+.progress-bar span {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.progress {
+    position: relative;
+    background: #444;
+    height: 8px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.progress::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: var(--progress, 0%);
+    background: #00d9ff;
+    border-radius: 4px;
+    animation: fill-bar 2s ease-in-out;
+}
+
+.progress-bar .percentage {
+    text-align: right;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+/* Professional Skills (Circular Progress) */
+.circular-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.circular-skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.circular-progress {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: conic-gradient(
+        #00d9ff var(--progress, 0%),
+        #444 var(--progress, 0%)
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fill-circle 2s ease-in-out;
+}
+
+.circular-progress span {
+    position: absolute;
+    font-size: 15px;
+    color: #ffff;
+    font-weight: bold;
+}
+
+.circular-skill p {
+    margin-top: 10px;
+    font-size: 15px;
+    color: #d6e4cb;
+    text-align: center;
+}
+
+/* Animations */
+@keyframes fill-bar {
+    from {
+        width: 0%;
+    }
+    to {
+        width: var(--progress, 0%);
+    }
+}
+
+@keyframes fill-circle {
+    from {
+        background: conic-gradient(#00d9ff 0%, #444 0%);
+    }
+    to {
+        background: conic-gradient(#00d9ff var(--progress, 0%), #444 var(--progress, 0%));
+    }
+}
+</style>
+
+<section>
+    <div class="container">
+        <!-- Certificates Section -->
+        <div class="section certificates">
+            <h2>My Certificates</h2>
+            <p>A collection of my achievements and certifications throughout my professional and academic journey.</p>
+
+	<div class="banner">
+                <div class="slider" style="--quantity: 10">
+                    <div class="item" style="--position: 1"><img src="images/certificate 1.png" alt="Certificate 1"></div>
+                    <div class="item" style="--position: 2"><img src="images/certificate 2.png" alt="Certificate 2"></div>
+                    <div class="item" style="--position: 3"><img src="images/certificate 3.png" alt="Certificate 3"></div>
+                    <div class="item" style="--position: 4"><img src="images/certificate 4.png" alt="Certificate 4"></div>
+                    <div class="item" style="--position: 5"><img src="images/certificate 5.png" alt="Certificate 5"></div>
+                    <div class="item" style="--position: 6"><img src="images/certificate 6.png" alt="Certificate 6"></div>
+                    <div class="item" style="--position: 7"><img src="images/certificate 7.png" alt="Certificate 7"></div>
+                    <div class="item" style="--position: 8"><img src="images/certificate 8.png" alt="Certificate 8"></div>
+                    <div class="item" style="--position: 9"><img src="images/certificate 9.png" alt="Certificate 9"></div>
+                    <div class="item" style="--position: 10"><img src="images/certificate 10.png" alt="Certificate 10"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+/* Certificates Section */
+.certificates h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #a8a4b8;
+    text-align: center;
+}
+
+.certificates p {
+    color: #d6e4cb;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+  *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #101213;
+            background-image:
+            repeating-linear-gradient(
+                to right, transparent 0 100px,
+                #101213 100px 101px
+            ),
+            repeating-linear-gradient(
+                to bottom, transparent 0 100px,
+                #101213 100px 101px
+            );
+        }
+        
+        body::before{
+            position: absolute;
+            width: min(1400px, 90vw);
+            top: 10%;
+            left: 50%;
+            height: 90%;
+            transform: translateX(-50%);
+            content: '';
+            background-image: url(images/bg.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: top center;
+            pointer-events: none;
+        }
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+.banner .slider{
+    position: absolute;
+    width: 200px;
+    height: 250px;
+    top: 10%;
+    left: calc(50% - 100px);
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    animation: autoRun 30s linear infinite;
+    z-index: 2;
+}
+@keyframes autoRun{
+    from{
+        transform: perspective(1000px) rotateX(-16deg) rotateY(0deg);
+    }to{
+        transform: perspective(1000px) rotateX(-16deg) rotateY(360deg);
+    }
+}
+
+.banner .slider .item{
+    position: absolute;
+    inset: 0 0 0 0;
+    transform: 
+        rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg))
+        translateZ(550px);
+}
+.banner .slider .item img{
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+}
+.banner .content{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: min(1400px, 100vw);
+    height: max-content;
+    padding-bottom: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+.banner .content h1{
+    font-family: 'ICA Rubrik';
+    font-size: 16em;
+    line-height: 1em;
+    color: #25283B;
+    position: relative;
+}
+.banner .content h1::after{
+    position: absolute;
+    inset: 0 0 0 0;
+    content: attr(data-content);
+    z-index: 2;
+    -webkit-text-stroke: 2px #d2d2d2;
+    color: transparent;
+}
+.banner .content .author{
+    font-family: Poppins;
+    text-align: right;
+    max-width: 200px;
+}
+.banner .content h2{
+    font-size: 3em;
+}
+.banner .content .model{
+    background-image: url(images/model.png);
+    width: 100%;
+    height: 75vh;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-size: auto 130%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    z-index: 1;
+}
+@media screen and (max-width: 1023px) {
+    .banner .slider{
+        width: 160px;
+        height: 200px;
+        left: calc(50% - 80px);
+    }
+    .banner .slider .item{
+        transform: 
+            rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg))
+            translateZ(300px);
+    }
+    .banner .content h1{
+        text-align: center;
+        width: 100%;
+        text-shadow: 0 10px 20px #000;
+        font-size: 7em;
+    }
+    .banner .content .author{
+        color: #fff;
+        padding: 20px;
+        text-shadow: 0 10px 20px #000;
+        z-index: 2;
+        max-width: unset;
+        width: 100%;
+        text-align: center;
+        padding: 0 30px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .banner .slider{
+        width: 100px;
+        height: 150px;
+        left: calc(50% - 50px);
+    }
+    .banner .slider .item{
+        transform: 
+            rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg))
+            translateZ(180px);
+    }
+    .banner .content h1{
+        font-size: 5em;
+    }
+}
+</style>
+          
+<section>
+<!-- Experience Section -->
+<div class="section experience">
+    <h2>My Experience</h2>
+    <p>Here is a summary of my professional journey so far.</p>
+
+    <!-- Experience Table -->
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Year</th>
+                    <th>Role</th>
+                    <th>Company/Organization</th>
+                    <th>Key Responsibilities</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2023</td>
+                    <td>Intern</td>
+                    <td>Kajang Municipal Council (MPKj)</td>
+                    <td>Data entry, document management, and event coordination.</td>
+                </tr>
+                <tr>
+                    <td>2022</td>
+                    <td>Assistant</td>
+                    <td>Freelance Designer</td>
+                    <td>Designed promotional posters using Canva and Adobe Express.</td>
+                </tr>
+                <tr>
+                    <td>2021</td>
+                    <td>Volunteer</td>
+                    <td>Local NGO</td>
+                    <td>Organized events and managed logistics for outreach programs.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</section>
+
+<style>
+/* Experience Section */
+.section.experience {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #0b2537, #101213);
+    color: #d6e4cb;
+    border-radius: 0px;
+    margin: 20px auto;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    animation: fadeIn 2s ease-in-out;
+}
+
+.section.experience h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #a8a4b8;
+}
+
+.section.experience p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #d6e4cb;
+}
+
+/* Table Styling */
+.table-container {
+    margin: 0 auto;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    max-width: 800px;
+    border-collapse: collapse;
+    margin: 0 auto;
+    background: #0f1f2d;
+    color: #d6e4cb;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+thead {
+    background: #00d9ff;
+    color: #081b29;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #444;
+}
+
+tbody tr:nth-child(even) {
+    background: #081b29;
+}
+
+tbody tr:hover {
+    background: #00d9ff;
+    color: #081b29;
+    transform: translateY(-3px);
+    transition: 0.3s;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+</style>
+
+    <!-- Footer -->
+    <footer>
+            <p>© 2024 Sya’s Portfolio | Built with snacks, sass, and a lot of trial and error ^_^</p>
+           </footer>
+
+<style>
+footer {
+    text-align: center;
+    padding: 10px; 
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #0b2537;
+    color: #a8a4b8;
+    font-size: 1rem;
+}
+
+/* Smooth Scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+</style>
+</body>
+</html>
